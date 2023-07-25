@@ -41,10 +41,10 @@ export default function Home() {
         </section>
         {/* servicess-button  */}
         <section>
-          <div className="flex gap-5 my-8 py-2 justify-center flex-wrap bg-[#EAEAEA] xl:mx-20 rounded-lg font-semibold text-lg">
+          <div className="flex lg:gap-5 px-1 my-8 py-2 justify-around bg-[#EAEAEA] xl:mx-20 lg:mx-10 md:mx-4 rounded-lg font-semibold sm:text-lg text-sm">
                   {
-                    [...Array(9)].map( (number, i) =><div key={i}>
-                      <button className="px-7 py-3 rounded-xl hover:bg-white">Design</button>
+                    [...Array(5)].map( (number, i) =><div key={i}>
+                      <button className="sm:px-7 px-2 sm:py-3 py-2 rounded-xl hover:bg-white">Design</button>
                     </div>
                   )
                   }
