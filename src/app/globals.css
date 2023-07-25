@@ -15,3 +15,11 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+@media only screen and (max-width: 600px) {
+  .previous{
+    display: none;
+  }
+  .next{
+    display: none;
+  }
+}
