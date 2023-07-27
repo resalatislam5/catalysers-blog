@@ -21,7 +21,7 @@ export default function Home() {
         </section>
         {/* banner-section */}
         <section className="my bg-[url(./ass/banner.jpg)] h-[80vh] bg-cover bg-no-repeat my-10 sm:mx-9">
-            <div className="flex flex-col gap-3 justify-end h-full text-white p-12">
+            <div className="flex flex-col gap-3 justify-end h-full text-white sm:p-12 p-6">
                 <div className='flex gap-1 items-center'>
                   <p>ulivia Rhye</p>
                     <Image className='w-1' src={dotw} alt="" />
@@ -32,7 +32,7 @@ export default function Home() {
                 <div className="flex gap-5">
                   {
                     [...Array(3)].map( (number, i) =><div key={i}>
-                      <button className="border px-4 rounded-xl">Design</button>
+                      <button className="border sm:px-4 px-2 rounded-xl">Design</button>
                     </div>
                   )
                   }
@@ -44,7 +44,7 @@ export default function Home() {
           <div className="flex lg:gap-5 px-1 my-8 py-2 justify-around bg-[#EAEAEA] xl:mx-20 lg:mx-10 md:mx-4 rounded-lg font-semibold sm:text-lg text-sm">
                   {
                     [...Array(5)].map( (number, i) =><div key={i}>
-                      <button className="sm:px-7 px-2 sm:py-3 py-2 rounded-xl hover:bg-white">Design</button>
+                      <button className="sm:px-7 px-1 sm:py-3 py-2 rounded-xl hover:bg-white">Design</button>
                     </div>
                   )
                   }
@@ -52,7 +52,8 @@ export default function Home() {
         </section>
         {/* blog-card  */}
         <section>
-          <div className="flex gap-10 py-10 justify-center items-center flex-wrap">
+                  {/* large-screen */}
+          <div className="hidden sm:flex gap-10 py-10 justify-center items-center flex-wrap">
                   {
                     [...Array(6)].map( (number, i) =><div className='flex flex-col gap-3 lg:w-96 w-80' key={i}>
                       <Image className='rounded-lg' src={banner_1} alt="" />
@@ -64,6 +65,32 @@ export default function Home() {
                       <div className="flex justify-between">
                         <h1 className="text-lg font-bold ">UX review persentations</h1>
                         <Image src={rightTopArrow} className='w-10' alt="" />
+                      </div>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quis?</p>
+                      <div className="flex gap-5">
+                        {
+                          [...Array(3)].map( (number, i) =><div key={i}>
+                            <button className="border px-4 rounded-xl ">Design</button>
+                          </div>
+                        )
+                        }
+                      </div>
+                    </div>)
+                    }
+            </div>     
+            {/* mobile-device  */}
+          <div className="flex gap-10 py-10 justify-center items-center flex-wrap sm:hidden ">
+                  {
+                    [...Array(4)].map( (number, i) =><div className='flex flex-col gap-3 lg:w-96 w-80' key={i}>
+                      <Image className='rounded-lg' src={banner_1} alt="" />
+                      <div className='flex gap-1 items-center font-bold'>
+                          <p>ulivia Rhye</p>
+                            <Image className='w-1' src={dotb} alt="" />
+                          <p>27 jan 2023</p>
+                        </div>
+                      <div className="flex justify-between">
+                        <h1 className="text-lg font-bold ">UX review persentations</h1>
+                        <Image src={rightTopArrow} className='w-5' alt="" />
                       </div>
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quis?</p>
                       <div className="flex gap-5">
